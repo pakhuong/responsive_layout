@@ -1,0 +1,251 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+  background-color: #fafafa;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2 {
+	font-size: 1em;
+	margin-bottom: 1.5em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+  list-style: none;
+	padding: 0;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	background-color: #fff;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.secondary-nav {
+	display: none;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+	padding: 0 15px 0;
+}
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+#portfolio,
+#contact {
+	text-align: center;
+}
+
+.profile-image {
+	max-width: 367px;
+	background-color: #ededed;
+	padding: 2em 6em;
+	margin: 1em auto;
+}
+
+.profile-image img {
+	max-width: 100%;
+	border-radius: 100%;
+}
+
+#portfolio {
+	background-color: #fff;
+	padding: 2em 0;
+	margin: 2em 0;
+}
+
+#portfolio h2 {
+	margin-bottom: 2.83em;
+}
+
+#portfolio ul li {
+	margin-bottom: 2em;
+}
+
+#contact {
+	margin-bottom: 3em;
+}
+
+.contact-info a {
+  font-weight: bold;
+}
+
+.main-footer {
+	border-top: 1px solid #e7e7e7;
+	font-weight: bold;
+}
+
+.main-footer p {
+	float: left;
+}
+
+.main-footer .back-to-top {
+	float: right;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+	.main-nav {
+		text-align: center;
+	}
+
+	.main-nav li {
+		display: inline-block;
+	}
+
+	.main-nav a {
+		background: none;
+	}
+
+	.banner p {
+		float: left;
+		width: 60%;
+		text-align: left;
+		padding-right: 15px;
+		font-size: 1.25em;
+	}
+
+	.profile-image {
+		float: right;
+		width: 40%;
+	}
+
+	#portfolio li {
+		display: inline-block;
+		width: 50%;
+		margin-right: -4px;
+		padding-left: 10px;
+		padding-right: 10px;
+		vertical-align: top;
+	}
+
+	#contact {
+		max-width: 80%;
+		margin: 0 auto 3em;
+	}
+
+	#contact p,
+	#contact ul {
+		font-size: 1.25em;
+	}
+
+	.back-to-top {
+		display: none;
+	}
+
+	.secondary-nav {
+		display: block;
+		float: right;
+		font-size: .95em;
+	}
+
+	.secondary-nav li {
+		display: inline-block;
+		margin-left: 1em;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.container {
+		max-width: 94%;
+		margin: 0 auto;
+	}
+
+	.name {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	#portfolio {
+		background: none;
+	}
+
+	#portfolio .container {
+		max-width: 94%;
+		margin: 0 auto;
+		background-color: #fff;
+	}
+
+	#portfolio li {
+		width: 33.3333%;
+	}
+
+	#contact {
+		max-width: 60%;
+	}
+}
